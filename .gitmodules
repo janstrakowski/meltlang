@@ -1,0 +1,3 @@
+[submodule "libdtstruct"]
+	path = libdtstruct
+	url = git@github.com:janstrakowski/libdtstruct.git

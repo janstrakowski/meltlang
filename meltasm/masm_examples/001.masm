@@ -1,0 +1,7 @@
+.write 1
+
+.start {
+	syscall *8*write .hello %%hello
+}
+
+.hello "Hello, World!\0"

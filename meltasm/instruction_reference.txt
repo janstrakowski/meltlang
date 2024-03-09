@@ -1,0 +1,27 @@
+===============================================================
+						  						  MELTBYTE
+									 Instruction Set Reference
+===============================================================
+
+CONVENTIONS:
+
+N (Big N) - refers to number of bits can be only 8, 16, 32, 64.
+<something> - is intended to be replaced with a value.
+<a|b> - is intended to be replaced with a or b
+<a?> - a can be or be not
+
+INSTURTION SET:
+
+<U|S>ADD<C|W?><N> *<N>*<a> *<N>*<b> *<N>*<dest> - adds unsigned
+  (U) or signed Two's complement (S) (all N-bit) integers a and
+	b and stores the  result in dest.  On the overflow the result
+	will be  saturated "clamped" (C) or wrapped (W) or  undefined 
+	(None).
+
+<U|S>ADDA<N> *<N>*<dest> *<N>*<src> - adds unsigned (U) or sig-
+	ned  Two's  complement (S)  (all N-bit) integers dest and src
+	and  stores the  result in dest. On the  overflow the  result
+	will be saturated "clamped"  (C) or wrapped (W) or  undefined
+	(None).
+
+<U|S>MUL<N> *<N>*<a> *<N>*<b> *<N>*<dest> - multiplies unsigned (U) or signed Two's complement (S) (all N-bit
